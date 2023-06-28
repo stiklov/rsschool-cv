@@ -20,7 +20,7 @@ let addDigits = function(num) {
 };
 ```
 
-#### Work experience
+#### Work experience:
 I'm working with 4d animation and have experience in writing scripts for my work by using Python.
 Also, I was practiced a lot with js and python algorithmic tasks.
 
