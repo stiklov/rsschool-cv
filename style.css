@@ -1,4 +1,75 @@
-p {
-    text-align: center;
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    transition: .5s;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.nav-item {
+    border-radius: 15px;
+    align-items: center;
+}
+
+.nav-item:hover {
+    transition: .5s;
+    background: #b7b7b7;
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    transition: .3s;
+}
+
+.header {
+    background-color: #616161;
+}
+
+.main {
+    background-color: yellowgreen;
+}
+
+.footer {
+    background-color: #616161;
+    height: 60px;
+}
+
+.github-link {
+    padding-left: 5%;
+}
+
+.github-link::before {
+    background-image: url("./images/footer/github-mark.svg");
     color: red;
-  } 
+}
