@@ -30,6 +30,15 @@ a:hover {
     margin: 0 auto;
 }
 
+.container-footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .nav-list {
     display: flex;
     justify-content: flex-end;
@@ -62,14 +71,31 @@ a:hover {
 
 .footer {
     background-color: #616161;
-    height: 60px;
+    padding: 10px 50px;
 }
 
 .github-link {
-    padding-left: 5%;
+    padding-left: 27px;
+    position: relative;
+    margin: 16px 0;
+    color: white;
 }
 
 .github-link::before {
-    background-image: url("./images/footer/github-mark.svg");
-    color: red;
+    background-image: url("./images/footer/github-mark-white.svg");
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+}
+
+.year {
+    color: white;
+}
+
+.rs-link {
+    width: 59px;
+    height: 22px;
 }
