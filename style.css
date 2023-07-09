@@ -14,20 +14,55 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: #15253F;
 }
 
 a {
     text-decoration: none;
-    color: white;
 }
 
 a:hover {
     text-decoration: underline;
     transition: .5s;
 }
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #5F84A2;
+}
+
+h2 {
+    font-size: 16px;
+    text-decoration: underline;
+    color: #5F84A2;
+}
+
+.contact-link {
+    color: #15253F;
+}
+
+.contacts-list {
+    list-style-type: circle;
+}
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
+}
+
+.container-main {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 21px;
+    border-width: 0 10px 0 10px;
+    border-style: solid;
+    border-color: #5F84A2;
+    box-shadow: 0 7px 15px rgba(0,0,0,0.5);
 }
 
 .container-footer {
@@ -52,25 +87,89 @@ a:hover {
 
 .nav-item:hover {
     transition: .5s;
-    background: #b7b7b7;
+    background: #C8DFEA;
 }
 
 .nav-link {
     padding: 0 20px;
     line-height: 50px;
     transition: .3s;
+    color: white;
 }
 
 .header {
-    background-color: #616161;
+    background-color: #5F84A2;
 }
 
 .main {
-    background-color: yellowgreen;
+    background-color: #DBECF4;
+}
+
+section {
+    width: calc(50% - 20px);
+    text-align: left;
+    padding: 10px;
+    margin: 5px;
+}
+
+pre {
+    padding: 10px 10px;
+}
+
+#code {
+    overflow: auto;
+    border-bottom: 2px solid #5F84A2; 
+}
+
+#profile {
+    text-align: center;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px solid #5F84A2;
+}
+
+#about {
+    border-bottom: 2px solid #5F84A2; 
+}
+
+#skills {
+    border-bottom: 2px solid #5F84A2; 
+}
+
+#projects {
+    border-bottom: 2px solid #5F84A2; 
+}
+
+.skills-list {
+    list-style-type: circle;
+}
+
+.education-list {
+    list-style-type: circle;
+}
+
+.avatar {
+    border: 3px solid #5F84A2;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    box-shadow: 0 0px 15px rgba(0,0,0,0.75);
+
+}
+
+.social {
+    font-size: 16px;
+    font-weight: bold;
+    color: #5F84A2;
+    margin-right: 6px;
 }
 
 .footer {
-    background-color: #616161;
+    background-color: #5F84A2;
     padding: 10px 50px;
 }
 
@@ -82,7 +181,7 @@ a:hover {
 }
 
 .github-link::before {
-    background-image: url("./images/footer/github-mark-white.svg");
+    background-image: url("./assets/svg/github-mark-white.svg");
     position: absolute;
     content: "";
     left: 0;
@@ -96,6 +195,13 @@ a:hover {
 }
 
 .rs-link {
+    background-image: url("./assets/svg/rs_school_js.svg");
     width: 59px;
     height: 22px;
 }
+
+@media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
